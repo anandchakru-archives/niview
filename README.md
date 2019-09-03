@@ -21,7 +21,9 @@ Go to [niview](https://nesign.github.io/) to see your changes.
 
 ### Few things to note
 
-Port(default 4200) and context(default a00001) can be changed using params like this: https: //nesign.github.io/? `port=8080` & `context=a00002`
+Port(default 4200) and context(default a00001) can be changed using params like this: 
+
+`https://nesign.github.io/?`**port=8080**&**context=a00002**
 
 This will work ONLY in your local.
 
@@ -35,6 +37,7 @@ This will work ONLY if your the followings files are available on localhost.
 ## Custom designs
 
 The following files can be used to fit your design needs.
+
 WARNING: These files should be used ONLY to design the invite. All resources must be included, no external assets, no external cdn, no external content, and definitely no XSS. To include a referral link, please write to us.
 
 ### main.scss
