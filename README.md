@@ -13,25 +13,24 @@ npm run live:dev
 
 Start designing your own invite by modifying the following files:
 
-- .src/teamplate/main.html
-- .src/styles/main.scss
-- .src/scripts/main.js
+- ./src/teamplate/main.html
+- ./src/styles/main.scss
+- ./src/scripts/main.js
 
 Go to [niview](https://nesign.github.io/) to see your changes.
 
 ### Few things to note
 
-Port(default 4200) and context(default a00001) can be changed using params like this: https://nesign.github.io/?`port=8080`&`context=a00002`
+Port(default 4200) and context(default a00001) can be changed using params like this: https: //nesign.github.io/? `port=8080` & `context=a00002`
+
 This will work ONLY in your local.
+
 This will work ONLY if your the followings files are available on localhost.
 
 - http://localhost:4200/a00001/assets/default.css
 - http://localhost:4200/a00001/assets/default.html
 - http://localhost:4200/a00001/assets/default.js
 
-
-Go to [niview](https://nesign.github.io/) to see your changes.
-Go to [niview](https://nesign.github.io/) to see your changes.
 
 ## Custom designs
 
