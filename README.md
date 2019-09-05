@@ -1,34 +1,41 @@
 # Niview
 
-This is a Test Sandbox for designing new invites.
+This is a **Test Sandbox** for designing new invites on [nivite](https://nivite.jrvite.com)
 
-## How to use
+## Creating a new design
+
+### Tools required
+* Web Browser 
+* Text editor, preferably [VSCode](https://code.visualstudio.com)
+
+### Steps
+1. Clone the blank repo
 
 ```sh
 git clone https://github.com/nesign/blank.git
 cd blank
 code .
 ```
-
-Start designing your own invite by modifying the following files:
+2. Start designing your own invite by modifying the following files:
 
 - ./src/teamplate/main.html
 - ./src/styles/main.scss
 - ./src/scripts/main.js
 
-Serve the modified files by
+3. Serve the modified files by
 
 ```sh
 npm run start
 ```
-
-The following files should be live
+4. Ensure the following files are live
 
 - http://localhost:8080/default.css
 - http://localhost:8080/default.html
 - http://localhost:8080/default.js
 
-Use the [niview sandbox](https://nesign.github.io/niview) to see your complete design.
+5. Go to the [niview sandbox](https://nesign.github.io/niview) to see your design.
+
+~
 
 ### Options
 
