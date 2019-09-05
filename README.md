@@ -17,13 +17,13 @@ Start designing your own invite by modifying the following files:
 - ./src/styles/main.scss
 - ./src/scripts/main.js
 
-Go to [niview](https://nesign.github.io/) to see your changes.
+Go to [niview](https://nesign.github.io/niview) to see your changes.
 
 ### Few things to note
 
-Port(default 4200) and context(default a00001) can be changed using params like this: 
+Default port is 8080. It can be overridden using url query params like this: 
 
-`https://nesign.github.io/?`**port=8080**&**context=a00002**
+`https://nesign.github.io/niview?`**port=8080**
 
 This will work ONLY in your local.
 
