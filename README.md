@@ -7,7 +7,7 @@ This is a Test Sandbox for designing new invites.
 ```sh
 git clone https://github.com/nesign/blank.git
 cd blank
-npm run start
+code .
 ```
 
 Start designing your own invite by modifying the following files:
@@ -16,14 +16,19 @@ Start designing your own invite by modifying the following files:
 - ./src/styles/main.scss
 - ./src/scripts/main.js
 
-Serve the modified files at
+Serve the modified files by
+
+```sh
+npm run start
+```
+
+The following files should be live
 
 - http://localhost:8080/default.css
 - http://localhost:8080/default.html
 - http://localhost:8080/default.js
 
-
-Go to [niview](https://nesign.github.io/niview) to see your changes.
+Use the [niview sandbox](https://nesign.github.io/niview) to see your complete design.
 
 ### Options
 
