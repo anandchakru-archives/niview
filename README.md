@@ -5,10 +5,9 @@ This is a Test Sandbox for designing new invites.
 ## How to use
 
 ```sh
-git clone https://github.com/nesign/a00001.git
-# Or you can create a new repo from scratch
-cd a00001
-npm run live:dev
+git clone https://github.com/nesign/blank.git
+cd blank
+npm run start
 ```
 
 Start designing your own invite by modifying the following files:
@@ -17,22 +16,20 @@ Start designing your own invite by modifying the following files:
 - ./src/styles/main.scss
 - ./src/scripts/main.js
 
+Serve the modified files at
+
+- http://localhost:8080/default.css
+- http://localhost:8080/default.html
+- http://localhost:8080/default.js
+
+
 Go to [niview](https://nesign.github.io/niview) to see your changes.
 
-### Few things to note
+### Options
 
 Default port is 8080. It can be overridden using url query params like this: 
 
 `https://nesign.github.io/niview?`**port=8080**
-
-This will work ONLY in your local.
-
-This will work ONLY if your the followings files are available on localhost.
-
-- http://localhost:4200/a00001/assets/default.css
-- http://localhost:4200/a00001/assets/default.html
-- http://localhost:4200/a00001/assets/default.js
-
 
 ## Custom designs
 
@@ -52,9 +49,9 @@ The scripts for designing the invite.
 
 The mustache template to define the DOM structure of the invite.
 
-## Before a Pull Request
+## Before you submit a Pull Request
 
 - Ensure you update the .src/assets/thumbnail-.jpg files to reflect the changes.
 - Ensure the minified version is not too heavy.
 - Test the design in all different screen sizes.
-- For thumbnail generation, use `screenshot.js`, but be aware that it is very primitive.
+- For thumbnail generation, use `npm run thumb`, but be aware that it is very primitive.
