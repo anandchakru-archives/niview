@@ -59,7 +59,36 @@ The scripts for designing the invite.
 
 ### main.html
 
-The mustache template to define the DOM structure of the invite.
+The [handlebars](https://github.com/wycats/handlebars.js/) template to define the DOM structure of the invite. The basic data available for rendering are:
+
+| Tag | Description |
+| --- | ----------- |
+| {{guest.name}} | The name of the user who is logged in |
+| {{invite.title}} | The title of the invite |
+| {{invite.shortMsg}} | The show welcome message, eg: Join Us |
+| {{{invite.longMsg}}} | The standard welcome message, notice the 3 {'s and }'s to render html as is |
+| {{invite.addrText}} | The venue details for the invite |
+| {{invite.timeFrom}} | The start time in epoch, eg: `1608951600000` |
+| {{invite.timeTo}} | The end time in epoch, eg: `1608966000000` |
+| {{invite.timeFromString}} | The start time, eg: `Friday, December 25, 2020 7:00 PM` |
+| {{invite.timeToString}} | The name of the user who is logged in |
+| {{bgPhoto.url}} | The url of photo with `bg` tag |
+| {{bgPhoto.title}} | The title of photo with `bg` tag |
+| {{bgPhoto.description}} | The description of photo with `bg` tag |
+| {{mainPhoto.url}} | The url of photo with `main` tag |
+| {{mainPhoto.title}} | The title of photo with `main` tag |
+| {{mainPhoto.description}} | The description of photo with `main` tag |
+| {{#each sliderPhotos}}{{/each}} | For each photo with 'slider#' tag, # is an optional number. Each photo will have {{url}}, {{title}}, {{description}} |
+
+Some helper functions:
+
+| Tag | Description |
+| --- | ----------- |
+| {{endsat invite}} | The end time, eg: `11:00 PM`, if its the same day, if not returns a full date, eg: `Friday, December 25, 2020 11:00 PM`. Takes the invite as input |
+| {{json invite}} | Returns the json string |
+| {{#each (eachch invite.shortMsg)}} {{/each}} | Loops through each character of the string input. Use {{this}} to render the character |
+| {{#ifEven @index}} {{/ifEven}} | Use inside a loop to check if its the even item or odd. to access the content the parent loop, you will have to use {{../title}}, {{../description}}, {{../url}}|
+
 
 ## Before you submit a Pull Request
 
