@@ -1,12 +1,12 @@
 # Niview
 
-This is a **Test Sandbox** for designing new invites on [nivite](https://nivite.jrvite.com)
+This is a **Test Sandbox** for designing new invites on [rathnas](https://e.rathnas.com)
 
 ## Creating a new design
 
 ### Tools required
-* Web Browser 
-* Text editor, preferably [VSCode](https://code.visualstudio.com)
+* Web Browser, recommended [firefox](https://www.mozilla.org/en-US/firefox/new/)
+* Text editor, recommended [VSCode](https://code.visualstudio.com)
 
 ### Steps
 1. Clone the blank repo
@@ -72,13 +72,9 @@ The [handlebars](https://github.com/wycats/handlebars.js/) template to define th
 | {{invite.timeTo}} | The end time in epoch, eg: `1608966000000` |
 | {{invite.timeFromString}} | The start time, eg: `Friday, December 25, 2020 7:00 PM` |
 | {{invite.timeToString}} | The name of the user who is logged in |
-| {{bgPhoto.url}} | The url of photo with `bg` tag |
-| {{bgPhoto.title}} | The title of photo with `bg` tag |
-| {{bgPhoto.description}} | The description of photo with `bg` tag |
-| {{mainPhoto.url}} | The url of photo with `main` tag |
-| {{mainPhoto.title}} | The title of photo with `main` tag |
-| {{mainPhoto.description}} | The description of photo with `main` tag |
-| {{#each sliderPhotos}}{{/each}} | For each photo with 'slider#' tag, # is an optional number. Each photo will have {{url}}, {{title}}, {{description}} |
+| {{bgPhoto.url}} | The url of bgPhoto |
+| {{mainPhoto.url}} | The url of mainPhoto |
+| {{#each slidePhotos}}{{/each}} | For each photo, these will be available: {{url}}, {{title}}, {{description}} |
 
 Some helper functions:
 
