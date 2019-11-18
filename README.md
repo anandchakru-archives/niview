@@ -9,31 +9,39 @@ This is a **Test Sandbox** for designing new invites on [rathnas](https://e.rath
 * Text editor, recommended [VSCode](https://code.visualstudio.com)
 
 ### Steps
-1. Clone the blank repo
+1. Clone the blank repo and open in VSCode
 
 ```sh
 git clone https://github.com/nesign/blank.git
 cd blank
 code .
 ```
-2. Start designing your own invite by modifying the following files:
+
+2. Install local dev certs using [mkcert](https://github.com/nesign/mkcert)
+```sh
+brew install mkcert
+mkcert -install
+mkcert localhost
+
+```
+3. Start designing your own invite by modifying the following files:
 
 - ./src/teamplate/main.html
 - ./src/styles/main.scss
 - ./src/scripts/main.js
 
-3. Serve the modified files by
+4. Serve the modified files by
 
 ```sh
 npm run start
 ```
-4. Ensure the following files are live
+5. Ensure the following files are live
 
-- http://localhost:8080/default.css
-- http://localhost:8080/default.html
-- http://localhost:8080/default.js
+- https://localhost:8080/default.css
+- https://localhost:8080/default.html
+- https://localhost:8080/default.js
 
-5. Go to the [niview sandbox](https://nesign.github.io/niview) to see your design.
+6. Go to the [niview sandbox](https://nesign.github.io/niview) to see your design.
 
 ~
 
